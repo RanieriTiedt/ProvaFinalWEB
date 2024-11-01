@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato-style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/Prova/home.html"><img src="/Prova/img/logo.png" alt="Logo" class="logo"></a>
+            <ul class="nav-links">
+                <li class="dropdown"><a>Produtos</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Produto 1</a></li>
+                            <li><a href="#">Produto 2</a></li>
+                            <li><a href="#">Produto 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+                <div class="login-cadastro">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Cadastro</a></li>
+                </div>
+            </ul>
+        </nav>
+</header>
+
+    <div class="container">
+        <h1>Contato</h1>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="project">Projeto a ser contratado:</label>
+            <select id="project" name="project" required>
+                <option value="">Selecione um projeto</option>
+                <option value="proj1">Projeto 1</option>
+                <option value="proj2">Projeto 2</option>
+                <option value="proj3">Projeto 3</option>
+                <option value="proj4">Projeto 4</option>
+                <option value="proj5">Projeto 5</option>
+                <option value="proj6">Projeto 6</option>
+            </select>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" onclick="validarContrato()">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <p>Redes sociais</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedin</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
